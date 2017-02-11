@@ -12,10 +12,13 @@ export default function () {
       </div>
       <div className="row">
         <div className="col-md-6 col-md-offset-3">
-          <List className="list-group">
-            <li className="list-group-item">Pesma</li>
-            <li className="list-group-item">Pesma</li>
-            <li className="list-group-item">Pesma</li>
+          <List className="media">
+            <div className="media-left">
+              <img className="media-object" src="..." alt="..." />
+            </div>
+            <div className="media-body">
+              <h4 className="media-heading">Media heading</h4>
+            </div>
           </List>
         </div>
       </div>

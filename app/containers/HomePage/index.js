@@ -16,7 +16,7 @@ import Player from '../../components/Player';
 export default class HomePage extends PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div className="home">
         <Header />
         <Playlist />
         <Player />

@@ -1,7 +1,14 @@
-import styled from 'styled-components';
+import React from 'react';
+import Wrapper from './wrapper';
+import Media from './media';
+import MediaItem from './mediaItem';
 
-const List = styled.div`
-  padding-top: 3rem;
-`;
-
-export default List;
+export default function () {
+  return (
+    <Wrapper>
+      <Media>
+        <MediaItem />
+      </Media>
+    </Wrapper>
+  );
+}

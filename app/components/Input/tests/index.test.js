@@ -1,11 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Container from '../index';
+import Input from '../index';
+import StyledInput from '../Input';
 
-describe('<Container />', () => {
-  it('creates div element', () => {
-    const component = shallow(<Container />);
-    expect(component.contains(<div></div>)).toHaveLength(2);
+describe('<Input />', () => {
+  it('creates input element', () => {
+    const component = shallow(<Input />);
+    expect(component.find(StyledInput)).toHaveLength(1);
+    expect(component.find('.form-control')).toBeDefined();
   });
 });

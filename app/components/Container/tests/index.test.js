@@ -6,6 +6,6 @@ import Container from '../index';
 describe('<Container />', () => {
   it('creates div element', () => {
     const component = shallow(<Container />);
-    expect(component.contains(<div></div>)).toHaveLength(2);
+    expect(component.find('div')).toHaveLength(1);
   });
 });
